@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "..\\..\\..\\Downloads\\bootstrap-5.0.2-examples\\bootstrap-5.0.2-examples"
+	}
+	{
+		"path": "C:\Users\gardn\source\repos\HtmlAndCSSCourse"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "HtmlAndCSSCourse"
+  }
+}
