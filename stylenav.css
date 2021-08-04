@@ -104,10 +104,10 @@
 
 .nav-links-btn:hover {
   background-color: transparent;
-  color: var(--bm-lightrose);
+  color: var(--bm-darkblue);
   padding: 5px 15px;
   border-radius: 4px;
-  border: solid 1px var(--bm-lightrose);
+  border: solid 1px var(--bm-darkblue);
   transition: all 0.1s ease-out;
 }
 

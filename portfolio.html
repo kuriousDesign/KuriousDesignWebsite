@@ -8,7 +8,10 @@
     <link rel="icon" type="image/ico" href="/favicon.ico" />
     <link rel="icon" href="/Resources/Kurious-Logo-Black clear bk.ico" />
     <meta name="viewport" content="width=device-width, initial-scale-1.0" />
-    <link href="portfoliostyle.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="stylenav.css" rel="stylesheet" />
+    <link href="hovercardstyle.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&display=swap" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,35 +20,63 @@
   </head>
 
   <body>
-    <section>
+    <main>
       <div class="nav-container">
         <nav class="navbar">
+          <a id="navbar-logo" href="index.html">
+            <img class="nav-logo-img" src="/Resources/KuriousLogo-transparent.png" />
+            <p class="logo-text">urious Design</p>
+          </a>
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+
           <ul class="nav-menu">
-            <li><a href="index.html" class="nav-links">Home</a></li>
             <li><a href="about.html" class="nav-links">About</a></li>
-            <li><a href="portfolio.html" class="nav-links active">Portfolio</a></li>
             <li><a href="services.html" class="nav-links">Services</a></li>
-            <li><a href="contact.html" class="nav-links">Contact</a></li>
+            <li><a href="portfolio.html" class="nav-links">Portfolio</a></li>
+            <li><a href="#" class="nav-links nav-links-btn">Contact</a></li>
           </ul>
         </nav>
       </div>
 
+      <div class="empty"></div>
+      <div class="empty"></div>
+
       <div class="wrapper">
-        <div class="content">
-          <div>
-            <h2>Crane Controls at Boundary Dam</h2>
-            <p>Developed software for controlling two 250 ton bridge cranes inside a hydro-electric powerhouse in Metaline Falls, WA. The powerhouse tunneled out of the side of a mountain to create the space where six large GE turbines rest inside, waiting to be rotated by the dammed water channeled just below. The cranes inside the powerhouse aid in servicing and refurbishing these large turbines.</p>
-            <a href="#">Learn More</a>
-          </div>
-        </div>
-        <div class="imgBx">
-          <video id="boundarydam" src="Resources/Portfolio/boundarydamvid.mp4" controls />
+        <div class="box">
+          <a href="marinoarm.html">
+            <div class="card">
+              <div class="imgBx">
+                <img src="Resources/Portfolio/marinoarm.png" />
+              </div>
+              <div class="details">
+                <h2>MarinoArm<br /><span>Mechatronic Prototype</span></h2>
+              </div>
+            </div>
+          </a>
+          <a href="boundarydam.html">
+            <div class="card">
+              <div class="imgBx">
+                <img src="Resources/Portfolio/cranehookjake.jpg" />
+              </div>
+              <div class="details">
+                <h2>Boundary Dam Cranes<br /><span>Controls Engineering</span></h2>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
-      <ul class="sci">
-        <li><a href="#">Prev</a></li>
-        <li><a href="#">Next</a></li>
-      </ul>
-    </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+
+    <script>
+      src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js";
+    </script>
+
+    <script src="app_nav.js"></script>
   </body>
 </html>
