@@ -1,10 +1,56 @@
+:root {
+  --bm-lightrose: #b93474;
+  --bm-darkrose: #5f1b3b;
+  --bm-teal: #4aa69f;
+  --bm-blue: #134687;
+  --bm-aqua: rgb(98, 167, 209);
+  --bm-darkpurple: rgb(94, 38, 113);
+  --bm-purple: rgb(108, 72, 137);
+  --bm-lightgreen: rgb(168, 203, 138);
+  --bm-darkblue: rgb(5, 38, 80);
+  --bm-black: rgb(1, 13, 27);
+
+  --orange: rgb(255, 115, 0);
+
+  --primary: var(--bm-black);
+  --accent: var(--bm-darkpurple);
+  --active: var(--bm-lightrose);
+  --highlight: var(--bm-lightgreen);
+  --drab: rgb(30, 173, 173);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-main {
   font-family: "Heebo", sans-serif;
+  caret-color: rgba(0, 0, 0, 0);
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.empty {
+  display: block;
+  content: "";
+  height: 55px;
+  width: 100%;
+  clear: both;
+}
+
+main {
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+}
+
+main:after {
+  clear: both;
+  content: "";
+  display: block;
 }
 
 .landing {
@@ -13,71 +59,45 @@ main {
   padding: 0rem 5rem;
 }
 
-.splash-div {
-  height: 500;
+.splash {
   display: flex;
   justify-content: left;
   background-color: white;
+  margin-top: 0;
+  margin-left: 5%;
+  width: 90%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: calc(100vh);
+  align-items: center;
 }
 
 .splash-img {
-  max-width: 600px;
-  min-width: 400px;
-  margin-left: 10%;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 30px;
-  height: 5vh;
-  max-height: 50px;
-}
-
-.nav-logo-img {
-  margin-left: 10%;
-  width: 40px;
-  padding-top: 15px;
-}
-
-#company-text {
-  font-family: "Permanent Marker", cursive;
-  font-weight: bolder;
-  font-size: 1.4rem;
-  display: inline-block;
-  white-space: nowrap;
-  padding-top: 15px;
-}
-
-.nav-links {
-  display: inline-flex;
-  list-style: none;
-  margin-left: auto;
-  transition: all 0.2s ease-in-out;
-  padding-top: 15px;
-}
-
-.nav-links li:hover {
-  color: teal;
-  transform: scale(1.05);
-}
-
-.nav-links li {
-  padding: 3rem;
-  font-size: 1.2rem;
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 200px;
+  width: auto;
+  height: auto;
 }
 
 .big-text {
-  position: absolute;
-  top: 140px;
-  left: 65%;
-  transform: translate(-50%, -30%);
-  font-size: 5rem;
+  position: fixed; /* or absolute */
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+  padding: 0;
+  font-size: 13vw;
   font-family: "Permanent Marker", cursive;
   font-weight: bolder;
-  color: rgb(169, 20, 255);
+  color: var(--bm-aqua);
   white-space: nowrap;
+}
+
+.page-heading {
+  padding-top: 55px;
+  padding-left: 5vw;
+  font-size: 4em;
 }
 
 .intro {
@@ -92,12 +112,8 @@ nav {
   align-items: center;
 }
 
-.emphasize-text {
-  font-family: "Permanent Marker", cursive;
-}
-
 .slider {
-  background: rgb(169, 20, 255);
+  background: var(--bm-darkrose);
   position: fixed;
   top: 0;
   left: 0;
@@ -112,6 +128,31 @@ nav {
   font-size: 6vw;
 }
 
+.emphasize-text1 {
+  font-family: "Permanent Marker", cursive;
+  color: var(--bm-aqua);
+}
+
+footer {
+  margin-top: 100px;
+  display: flex;
+  height: 50px;
+  background: rgba(90, 64, 64, 0.02);
+  align-items: center;
+  justify-content: space-around;
+  vertical-align: middle;
+}
+
+.footer-text {
+  display: inline;
+  font-family: "Heebo";
+  color: rgba(90, 64, 64, 0.3);
+  color: var(--bm-darkblue);
+  opacity: 0.7;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
 .hide {
   background: black;
   overflow: hidden;
@@ -120,4 +161,12 @@ nav {
 .hide span {
   transform: translateY(100%);
   display: inline-block;
+}
+
+.resume-viewer {
+  width: 100%;
+  margin-top: 55px;
+  height: calc(100vh - 65px);
+  overflow: visible;
+  margin-bottom: 0;
 }

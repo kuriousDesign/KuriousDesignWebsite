@@ -1,0 +1,221 @@
+:root {
+  --bm-lightrose: #b93474;
+  --bm-darkrose: #5f1b3b;
+  --bm-teal: #4aa69f;
+  --bm-blue: #134687;
+  --bm-aqua: rgb(98, 167, 209);
+  --bm-darkpurple: rgb(94, 38, 113);
+  --bm-purple: rgb(108, 72, 137);
+  --bm-lightgreen: rgb(168, 203, 138);
+  --bm-darkblue: rgb(5, 38, 80);
+  --bm-black: rgb(1, 13, 27);
+
+  --orange: rgb(255, 115, 0);
+
+  --primary: var(--bm-black);
+  --accent: var(--bm-darkpurple);
+  --active: var(--bm-lightrose);
+  --highlight: var(--bm-lightgreen);
+  --drab: rgb(30, 173, 173);
+}
+
+.nav-container {
+  width: 100%;
+  background-color: white;
+  color: var(--primary);
+  position: fixed;
+  z-index: 2;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 0.6fr auto 0.9fr;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  margin: 0 0;
+}
+
+#navbar-logo {
+  color: black;
+  height: 45px;
+  justify-self: start;
+  padding-left: 5vw;
+  font-family: "Permanent Marker", cursive;
+  font-weight: bolder;
+  font-size: 1.4rem;
+  text-decoration: none;
+  display: flex;
+  min-width: 220px;
+}
+
+#navbar-logo:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.nav-logo-img {
+  width: 40px;
+  display: inline;
+  margin-top: 5px;
+  padding: 0;
+}
+
+.logo-text {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  font-family: "Permanent Marker";
+  position: relative;
+  top: 10px;
+  white-space: nowrap;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  list-style: none;
+  text-decoration: none;
+  text-align: right;
+  padding-right: 5vw;
+  padding-top: 5px;
+  width: 100%;
+  justify-self: end;
+  max-width: 500px;
+}
+
+.nav-links {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.nav-links:hover {
+  color: var(--bm-lightrose);
+  transform: scale(1.1);
+  transition: all 0.2s ease-out;
+}
+
+.nav-links-btn {
+  background-color: var(--bm-darkblue);
+  color: var(--bm-aqua);
+  padding: 6px 16px;
+  border-radius: 4px;
+}
+
+.nav-links-btn:hover {
+  background-color: transparent;
+  color: var(--bm-lightrose);
+  padding: 5px 15px;
+  border-radius: 4px;
+  border: solid 1px var(--bm-lightrose);
+  transition: all 0.1s ease-out;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+
+/*menu styles*/
+
+@media screen and (max-width: 768px) {
+  .nav-container {
+    position: fixed;
+  }
+
+  .nav-menu {
+    display: grid;
+    grid-template-columns: 1 fr 0.2fr auto;
+    background: transparent;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    max-width: none;
+    transform: translatex(0);
+    z-index: 1;
+  }
+
+  #navbar-logo {
+    min-width: 250px;
+  }
+
+  .nav-menu.active {
+    background-color: white;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    padding-right: 0;
+    padding-top: 0;
+  }
+  .nav-links {
+    font-family: "Heebo";
+    text-align: center;
+    line-height: 40px;
+    width: 100%;
+    display: table;
+    color: black;
+  }
+
+  .nav-links:hover {
+    background: var(--bm-teal);
+    color: white;
+    transition: all 0.4s ease-out;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  .nav-links-btn {
+    border: none;
+    padding: 0;
+    border-radius: 0;
+    background-color: var(--bm-darkblue);
+    color: var(--bm-aqua);
+    transition: all 0.1s ease-out;
+  }
+
+  .nav-links-btn:hover {
+    border: none;
+    padding: 0;
+    border-radius: 0;
+    background-color: var(--active);
+    color: white;
+    transition: all 0.2s ease-out;
+  }
+
+  #mobile-menu {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    transform: translate(5%, 20%);
+  }
+
+  .menu-toggle .bar {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu-toggle:hover {
+    cursor: pointer;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  #mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}

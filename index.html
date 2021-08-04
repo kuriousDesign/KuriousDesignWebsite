@@ -2,93 +2,103 @@
 <html lang="en">
   <head>
     <title>Kurious Design | Engineering Design Services and Portfolio</title>
-    <meta name="description" content="Website for my portfolio" />
+    <meta name="description" content="Engineering services you'll be kurious about" />
     <meta name="robots" content="index,follow" />
     <meta charset="utf-8" />
     <link rel="icon" type="image/ico" href="/favicon.ico" />
     <link rel="icon" href="/Resources/Kurious-Logo-Black clear bk.ico" />
     <meta name="viewport" content="width=device-width, initial-scale-1.0" />
-    <link rel="stylesheet" href="/style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <!-- Bootstrap core CSS -->
-    <link href="/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-    <link href="navbar.css" rel="stylesheet" />
-
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&display=swap"
-    />
+    <link href="style.css" rel="stylesheet" />
+    <link href="stylenav.css" rel="stylesheet" />
+    <link href="stylecards.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&display=swap" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
   </head>
 
   <body>
     <main>
-      <nav class="navbar navbar-expand-sm navbar-light bg-white">
-        <div class="container-fluid">
-          <img
-            class="nav-logo-img"
-            src="/Resources/KuriousLogo-transparent.png"
-          />
-          <text id="company-text"><a>urious design</a></text>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarsExample03"
-            aria-controls="navbarsExample03"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarsExample03">
-            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-            </ul>
+      <div class="nav-container">
+        <nav class="navbar">
+          <a id="navbar-logo" href="index.html">
+            <img class="nav-logo-img" src="/Resources/KuriousLogo-transparent.png" />
+            <p class="logo-text">urious Design</p>
+          </a>
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
           </div>
-        </div>
-      </nav>
 
-      <div class="splash-div">
-        <img class="splash-img" src="/Resources/KuriousLogo-transparent.png" />
-        <text class="big-text">Stay Kurious.</text>
+          <ul class="nav-menu">
+            <li><a href="about.html" class="nav-links">About</a></li>
+            <li><a href="services.html" class="nav-links">Services</a></li>
+            <li><a href="portfolio.html" class="nav-links">Portfolio</a></li>
+            <li><a href="#" class="nav-links nav-links-btn">Contact</a></li>
+          </ul>
+        </nav>
       </div>
+
+      <div class="splash">
+        <img class="splash-img" src="/Resources/KuriousLogo-transparent.png" />
+      </div>
+
+      <div class="wrapper">
+        <div class="cards-list">
+          <a href="about.html" class="card-link">
+            <div class="card 1">
+              <div class="card_image"><img src="Resources/trippymountain4.jpg" /></div>
+              <div class="card_title title-white">
+                <p>about</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="services.html" class="card-link">
+            <div class="card 2">
+              <div class="card_image">
+                <img src="Resources/trippymountain1.jpg" />
+              </div>
+              <div class="card_title title-white">
+                <p>services</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="portfolio.html" class="card-link">
+            <div class="card 3">
+              <div class="card_image">
+                <img src="Resources/trippymountain.jpg" />
+              </div>
+              <div class="card_title title-white">
+                <p>portfolio</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="portfolio.html" class="card-link">
+            <div class="card 4">
+              <div class="card_image">
+                <img src="Resources/trippymountain2.jpg" />
+              </div>
+              <div class="card_title title-white">
+                <p>contact</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <footer>
+        <p class="footer-text">kurious design</p>
+        <p class="footer-text">2021</p>
+        <p class="footer-text">Denver, Colorado - 1mile high</p>
+      </footer>
     </main>
+
+    <div class="big-text">Stay Kurious.</div>
 
     <div class="intro">
       <div class="intro-text">
@@ -96,19 +106,19 @@
           <span class="text">Engineering design services</span>
         </div>
         <div class="hide">
-          <span class="text"
-            >you'll be <b class="emphasize-text">kurious</b> about.
-          </span>
+          <span class="text">you'll be <b class="emphasize-text1">kurious</b> about. </span>
         </div>
       </div>
     </div>
 
     <div class="slider"></div>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
-      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
-      crossorigin="anonymous"
-    ></script>
-    <script src="./app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+
+    <script>
+      src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js";
+    </script>
+
+    <script src="app.js"></script>
+    <script src="app_nav.js"></script>
   </body>
 </html>

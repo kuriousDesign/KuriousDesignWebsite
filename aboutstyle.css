@@ -1,0 +1,20 @@
+#aboutwrapper {
+  padding-top: 55px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.profile {
+  max-width: 100%;
+  flex: 1 1 500px;
+}
+
+#profile-pic {
+  max-width: 100vw;
+}
+
+.bio {
+  min-width: 300px;
+
+  flex: 1 1 500px;
+}
