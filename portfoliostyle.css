@@ -1,7 +1,13 @@
-:root {
+.boundarydamcolors {
   --primary: rgb(18, 30, 26);
   --accent: rgb(62, 89, 74);
   --highlight: rgb(222, 227, 230);
+}
+
+.marinoarmcolors {
+  --primary: rgb(22, 170, 126);
+  --accent: rgb(233, 125, 23);
+  --highlight: rgb(0, 255, 255);
 }
 
 * {
@@ -97,6 +103,7 @@ section .wrapper .imgBx {
 #marinoarm {
   max-width: 100%;
   max-height: 700px;
+  background-color: rgba(255, 255, 255, 0.95);
 }
 
 .sci {

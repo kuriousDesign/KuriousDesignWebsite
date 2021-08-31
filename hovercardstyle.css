@@ -71,16 +71,17 @@
 .card .details h2 {
   margin: 0;
   padding: 0;
-  font-weight: 600;
-  font-size: 20px;
-  color: #777;
-  text-transform: uppercase;
+  font-family: "Permanent Marker";
+  font-weight: 800;
+  font-size: 24px;
+  color: var(--bm-darkblue);
 }
 
 .card .details h2 span {
-  font-weight: 500;
-  font-size: 16px;
-  color: #f38695;
+  font-weight: 300;
+  font-size: 14px;
+  color: var(--bm-aqua);
   display: block;
-  margin-top: 5px;
+  margin-top: 1px;
+  text-transform: lowercase;
 }
